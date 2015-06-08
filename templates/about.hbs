@@ -5,3 +5,12 @@
 </p>
 
 <button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn Dracula's real name!</button>
+
+{{#if isPictureShowing}}
+<button class="btn btn-info" {{action 'hidePicture'}}>Hide Picture</button>
+<p>
+  <img src="http://images.clipartpanda.com/vampire-clip-art-vampire-5-clipart.gif"/>
+</p>
+{{else}}
+<button name="btn btn-info" {{action 'showPicture'}}>Click here to show a picture</button>
+{{/if}}
